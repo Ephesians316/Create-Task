@@ -1,0 +1,69 @@
+import math
+
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+    
+def multiply(x,y):
+    return x*y
+
+def divide(x, y):
+    return x/y
+    
+def sine(z):
+    return math.sin(z)
+
+def cosine(z):
+    return math.cos(z)
+
+def tangent(z):
+    return math.tan(z)
+
+def cosecant(z):
+    return 1/math.sin(z)
+
+def secant(z):
+    return 1/math.cos(z)
+
+def cotangent(z):
+    return 1/math.tan(z)
+
+def calculator():
+        print('Select an operation')
+        print('1.Add')
+        print('2.Subtract')
+        print('3.Multiply')
+        print('4.Divide')
+        print('5.Trigonometry')
+        options = '1', '2', '3', '4', '5'
+        choice = raw_input('Enter operation: ')
+        if choice == ('1','4'):
+            x = int(raw_input('First number: '))
+            y = int(raw_input('Second number: '))
+            while raw_input != choice:
+                if choice == '1':
+                    return add(x,y)
+                if choice == '2':
+                    return subtract(x,y)
+                if choice == '3':
+                    return multiply(x,y)
+                if choice == '4':
+                    return divide(x,y)
+        if choice == '5':
+            trigoptions = 'sine', 'cosine', 'tangent', 'cosecant', 'secant', 'cotangent'
+            trigchoice = raw_input('Enter the type of trig function: ')   
+            z = int(raw_input("Enter your number in radians: "))
+            if trigchoice == 'sine':
+                return sine(z)
+            if trigchoice == 'cosine':
+                return cosine(z)
+            if trigchoice == 'tangent':
+                return tangent(z)
+            if trigchoice == 'cosecant':
+                return cosecant(z)
+            if trigchoice == 'secant':
+                return secant(z)
+            if trigchoice == 'cotangent':
+                return cotangent 
